@@ -1,15 +1,19 @@
-<h1>Menu</h1>
+<body>
+  <div class="pretty">
+    <h1>Menu</h1>
+    <hr>
+    <h2>Drinks</h2>
+    <hr>
 
-<h2>Drinks</h2>
-<ul>
-  <li>Coffee: $3</li>
-  <li>Tea: $3</li>
-  <li>Milkshake: $5</li>
-  <li>Fresh juice: $5</li>
-</ul>
+      <% @drinks.each do |item| %>
+        <p><%= render item %></p>
+      <% end %>
 
-<h2>Food</h2>
-<ul>
-  <li>Muffin: $4</li>
-  <li>Toastie: $6</li>
-</ul>
+    <hr>
+    <h2>Food</h2>
+    <hr>
+      <% @food.each do |item| %>
+        <p><%= render item %></p>
+      <% end %>
+    </div>
+</body>

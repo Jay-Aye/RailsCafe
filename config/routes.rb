@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   get '/menu' => 'menu#index'
   root 'menu#index'
 
